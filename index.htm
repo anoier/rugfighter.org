@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Rug Fighter</title>
+  <meta content="Fight rugpulls, Rug research, Check LP, Lock LP, Burn LP, Rug Fighter App, Insurance." name="description">
+  <meta content="LP Locker, Liquidity Locker, Smart Contract Audit, Crypto Insurance, LP Token, Token research" name="keywords">
+  <meta name="csrf-token" content="0">
+
+
+<!-- Hotjar Tracking Code for https://rugfighter.org -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2416712,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="css.css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preload" as="font" href="static/assets/vendor/icofont/fonts/icofont.woff2" type="font/woff2" crossorigin="anonymous">
+
+  <!-- Vendor CSS Files -->
+   <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" %}"="" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: Scaffold - v2.0.0
+  * Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="">
+          <img src="static/assets/img/android-chrome.png" alt="Rug Fighter" class="img-fluid">
+          <h1 class="text-dark" style="display:inline;">
+            <span>Rug Fighter</span>
+          </h1>
+        </a>
+
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <!--<li class="active"><a href="/">Home</a></li>-->
+          <!--
+          <li class="drop-down"><a href="">About</a>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          -->
+          
+          
+          
+          <li><a href="#features-research">RFChecker</a></li>
+          <li><a href="#services">Our Products</a></li>
+          <li><a target="_blank" href="https://rugfighter.org/Roadmap.jpg">Roadmap</a></li>
+          <li><a href="#services">Whitepaper</a></li>
+          <li><a target="_blank" href="https://poocoin.app">Chart</a></li>
+          <li><a target="_blank" href="https://pancakeswap.finance">Buy RFToken</a></li>
+          
+          <!--
+          
+          
+         
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      
+     
+    </div>
+  </header><!-- End Header -->
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+   
+     <!-- ======= Features Section ======= -->
+     <section id="features-research" class="features-research features">
+      <div class="container">
+        <div class="section-title" data-aos="" style="margin-top: 20px;">
+          <h2>RFChecker</h2>
+          <p>Check your token here!</p>
+          <p><small>Please note this is not a financial advice. Always do your own research before investing.</small></p>
+
+        </div> 
+
+        <div class="form-group row ">
+          <div class="col-lg-6 offset-lg-3">
+              <input type="text" class="form-control" id="research_token_address" placeholder="Enter token address" disabled="">
+              <br>
+              <center>
+                <div id="research_token_info_spinner" class="spinner-border" role="status" style="display:none">
+                  <span class="sr-only">Loading...</span>
+                </div>
+              </center>
+              <center><p style="font-weight: bold;" id="research_token_info"></p></center>
+          </div>
+      </div>
+   
+  <div class="form-group row ">
+        <div class="col-lg-6 offset-lg-3" id="research_fee" style="display:none">
+            
+        </div>
+      </div>
+
+
+      
+      <div class="form-group row ">
+          <div class="col-lg-6 offset-lg-3">
+            <button class="btn btn-primary" id="research_button" style="display:none" disabled="">
+              Research
+              <span id="research_button_spinner" style="display:none" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            </button>
+          </div>
+      </div>
+        <div class="row">
+          <div class="col-lg-8 offset-lg-3" id="research_result" style="display:none">
+          <h4 id="research_result_title">Insights</h4>
+          <ul id="research_result_insights">
+            <li><i class="icofont-check-circled"></i> Liquidity check</li>
+            <li><i class="icofont-check-circled"></i> Holder check</li>
+            <li><i class="icofont-check-circled"></i> Name</li>
+          </ul>
+          </div>
+          
+        </div>
+
+      
+      </div>
+    </section><!-- End Features Section -->
+
+
+
+
+         <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Our Products</h2>
+          <p>We offer various exciting products and opportunities for investors, developers and businesses.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box icon-box-cyan">
+              <div class="icon"><i class="bx bx-check-shield"></i></div>
+              <h4 class="title"><a href="#features-research">RFChecker</a></h4>
+              <p class="description"> Check any newly launched BSC token before investing to ensure it's safe </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
+            <div class="icon-box icon-box-pink">
+              <div class="icon"><i class="bx bxs-lock"></i></div>
+              <h4 class="title"><a href="#features">RFLocker</a></h4>
+              <p class="description">Lock LP tokens with us securely and cost-effective.</p>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">RFAudit</a></h4>
+              <p class="description">Order extensive Audit for your smart-contract</p>
+            </div>
+          </div>
+           
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
+            <div class="icon-box icon-box-pink">
+              <div class="icon"><i class="bx bxs-data"></i></div>
+              <h4 class="title"><a href="#features">RFDatabase</a></h4>
+              <p class="description">Check our database for known scam tokens</p>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bx bx-landscape"></i></div>
+              <h4 class="title"><a href="">RFInsurance</a></h4>
+              <p class="description">Order our insurance for your crypto-assets.</p>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box icon-box-blue">
+              <div class="icon"><i class="bx bxl-android"></i></div>
+              <h4 class="title"><a href="">RFBot</a></h4>
+              <p class="description">Launch our own Telegram bot in your channel</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+  
+  
+        <center>
+        <div class="social-links mt-3">
+          <a target="_blank" href="https://www.twitter.com/RFighter" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a target="_blank" href="https://t.me/RFighter" class="telegram"><i class="bx bxl-telegram"></i></a>
+        </div>
+      </center>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+    <center>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Rug Fighter</span></strong>. All Rights Reserved
+      </div>
+     
+
+  <a href="#" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+
+  <script src="static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/web3/web3.min.js"></script>
+ 
+
+
+  <!-- Template Main JS File -->
+  
+  <script src="static/CACHE/js/output.6e361d60cdf4.js"></script>
+
+  <script>
+    $.ajaxSetup({
+    headers: {
+        'X-CSRFToken': $('meta[name="csrf-token"]').attr('content')
+    }
+    });
+  </script>
+  
+
+</body>
+
+</html>
